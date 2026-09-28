@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# 모델 체크포인트 / 임베딩·학습 npz (용량 큼, 저장소에 안 올림)
+*.pt
+*.pth
+*.npz
+
+# 원본/중간 데이터 (용량 큼, 저장소에 안 올림)
+chembl_data/
+DTA_dataset/DAVIS/
+DTA_dataset/chembl_35/
+DTA_model_npz/
+Human_FASTA/
+emb/
+
+# 학습 결과물 (체크포인트 외 로그/텐서보드)
+DTA_model/result/
+predictions/
