@@ -151,37 +151,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-# === 전체 데이터셋 한 번에 실행 ===
-# conda run -n DTA python predict.py \
-#   --model_root /HDD1/phj318/Work/MutPLM/DTA_V2/V3(best)/result \
-#   --npz_files \
-#       /HDD1/phj318/Work/MutPLM/GBA1_prediction/embeddings/GBA1_wild.npz \
-#       /HDD1/phj318/Work/MutPLM/GBA1_prediction/embeddings/GBA1_(N370S).npz \
-#       /HDD1/phj318/Work/MutPLM/GBA1_prediction/embeddings/GBA1_(E326K).npz \
-#       /HDD1/phj318/Work/MutPLM/GBA1_prediction/embeddings/GBA1_(L444P).npz \
-#   --save_dir /HDD1/phj318/Work/MutPLM/GBA1_prediction/predictions
-
-# === 단일 데이터셋만 실행 ===
-# conda run -n DTA python predict.py \
-#   --model_dir /HDD1/phj318/Work/MutPLM/DTA_V2/V3(best)/result/DAVIS-complete \
-#   --npz_files /HDD1/phj318/Work/MutPLM/GBA1_prediction/embeddings/GBA1_(E326K).npz \
-#   --save_dir /HDD1/phj318/Work/MutPLM/GBA1_prediction/predictions
-
-
-# # conda run -n DTA 
-# python predict.py \
-#   --model_root "/HDD1/phj318/Work/MutPLM/DTA_V2/V3(best)/result" \
-#   --npz_files \
-#       /HDD1/phj318/Work/MutPLM/casestudy/EGFR/embeddings/EGFR_wild.npz \
-#       "/HDD1/phj318/Work/MutPLM/casestudy/EGFR/embeddings/EGFR_(L858R).npz" \
-#       "/HDD1/phj318/Work/MutPLM/casestudy/EGFR/embeddings/EGFR_(L858R_T790M).npz" \
-#       "/HDD1/phj318/Work/MutPLM/casestudy/EGFR/embeddings/EGFR_(L858R_T790M_C797S).npz" \
-#   --save_dir /HDD1/phj318/Work/MutPLM/casestudy/EGFR/predictions
-
-
-# conda run -n DTA 
-# python predict.py \
-#   --model_root "/HDD1/phj318/Work/MutPLM/DTA_V2/V3(best)/result" \
-#   --npz_files \
-#       "/HDD1/phj318/Work/MutPLM/casestudy/EGFR/embeddings/EGFR_(T790M_C797S).npz" \
-#   --save_dir /HDD1/phj318/Work/MutPLM/casestudy/EGFR/predictions

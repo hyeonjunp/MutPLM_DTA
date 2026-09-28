@@ -265,19 +265,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# python PLM_ChemBERT_77_DTA_V2/train.py \
-#   --data_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/protein_embedding/max_len_1024/int_sincos_77/DAVIS-complete \
-#   --result_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/PLM_ChemBERT_77_DTA_V2/result/DAVIS-complete \
-#   --resume && \
-# python PLM_ChemBERT_77_DTA_V2/train.py \
-#   --data_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/protein_embedding/max_len_1024/int_sincos_77/Kd \
-#   --result_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/PLM_ChemBERT_77_DTA_V2/result/Kd \
-#   --resume && \
-# python PLM_ChemBERT_77_DTA_V2/train.py \
-#   --data_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/protein_embedding/max_len_1024/int_sincos_77/Ki \
-#   --result_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/PLM_ChemBERT_77_DTA_V2/result/Ki \
-#   --resume && \
-# python PLM_ChemBERT_77_DTA_V2/train.py \
-#   --data_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/protein_embedding/max_len_1024/int_sincos_77/IC50 \
-#   --result_dir /HDD1/phj318/work/Chem_DTA/inception_PLM_DTA/PLM_ChemBERT_77_DTA_V2/result/IC50 \
-#   --resume

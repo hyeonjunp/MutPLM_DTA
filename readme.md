@@ -1,5 +1,7 @@
 # MutPLM_DTA
 
+![model architecture](images/model.png)
+
 약물-단백질 결합 친화도(DTA) 예측 파이프라인.
 **PLM 사전학습 → 전처리(임베딩+npz) → DTA 학습 → 예측** 순서.
 
@@ -68,7 +70,3 @@ python DTA_model/predict.py \
 - 예측 입력 npz는 학습 입력과 같은 스키마(`ID, SMILES, protein, affinity, drug_embedding, protein_embedding, protein_max_embedding`)여야 한다. 새 샘플을 예측하려면 2단계와 같은 방식(`extract_protein_embeddings.py` → `extract_drug_embeddings.py` → `build_npz.py`)으로 npz를 만들면 된다.
 - `--model_root DTA_model/result --datasets DAVIS-complete Kd Ki IC50`으로 여러 데이터셋 모델을 한 번에 돌릴 수 있다.
 - 출력 csv: `pred_fold1~5`(fold별 예측), `pred_mean`(최종 예측값), `pred_std`(불확실성).
-
-## 참고
-
-- `DTA/`는 `predict.py`가 없는 구버전. 학습·추론은 `DTA_model/` 기준.
